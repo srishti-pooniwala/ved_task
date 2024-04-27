@@ -1,0 +1,119 @@
+.App {
+  padding: 2rem;
+}
+
+.form {
+  width: 60%;
+  /* background: #000; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+}
+
+.buttons .cancel {
+  background: transparent;
+  color: grey;
+  border: none;
+  padding: 3px 12px;
+  cursor: pointer;
+}
+.buttons .save {
+  background: rgb(0 64 213);
+  color: white;
+  border: none;
+  padding: 3px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.formElementsSection {
+  margin: 1rem auto;
+}
+.gridElements {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+.gridElements .labels {
+  justify-self: end;
+  align-self: flex-start;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.gridElements .inputs {
+  height: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
+  padding: 2px 4px;
+}
+
+.inputs:focus {
+  outline-color: rgb(139, 139, 255);
+  outline-width: 0.1px;
+}
+.gridElements .selects {
+  height: 1.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
+  padding: 2px 10px;
+}
+
+.selects:focus {
+  outline-color: rgb(139, 139, 255);
+  outline-width: 0.1px;
+}
+
+.red {
+  color: rgb(168, 0, 0);
+}
+
+.gridElements .value {
+  font-size: 0.8rem;
+  color: rgba(32, 32, 32, 0.897);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.headings {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* justify-content: center; */
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+  color: rgb(53, 53, 53);
+  font-size: 0.9rem;
+}
+
+.progressBar {
+  border: 2px;
+  background: #fff;
+  padding: 5px 8px;
+  display: flex;
+  gap: 0px;
+  margin-bottom: 2rem;
+}
+.badges {
+  position: relative;
+  height: 1.9rem;
+  width: max-content;
+  cursor: pointer;
+}
+
+.badgeText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* z-index: 2; */
+  color: white;
+  font-size: 0.9rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+path {
+  transition: all 0.2s ease-out;
+}
